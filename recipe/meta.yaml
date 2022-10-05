@@ -1,5 +1,5 @@
 {% set name = "emsarray" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
-  sha256: 9b2729753bd3dc57758889f1fc3b9c4ca3193f838aaef820b2a677e361b555f9
+  sha256: ad3f1e1f54ad34fdff1157aa16afee02e975664d5a944f23f0e2369233209bf2
 
 build:
   number: {{ build_num }}
@@ -33,6 +33,7 @@ outputs:
         - netcdf4 >=1.5.3
         - numpy >=1.18.0
         - packaging >=21.3
+        - pyshp >=2.3.0
         - shapely >=1.8.0
         - xarray >=0.18.2
         - dask >=2022.1.0
