@@ -3,7 +3,7 @@ About emsarray
 
 Home: https://pypi.org/project/emsarray/
 
-Package license: LicenseRef-CSIRO-Open-Source-Software-Licence-Agreement
+Package license: [BSD-3-Clause](https://github.com/csiro-coasts/emsarray/blob/main/LICENCE)
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emsarray-feedstock/blob/main/LICENSE.txt)
 

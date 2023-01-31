@@ -67,7 +67,7 @@ outputs:
 about:
   home: https://pypi.org/project/emsarray/
   summary: Utilities for working with non-CF grid datasets
-  license: LicenseRef-CSIRO-Open-Source-Software-Licence-Agreement
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENCE
   doc_url: https://emsarray.readthedocs.io/
