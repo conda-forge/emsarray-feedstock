@@ -28,15 +28,15 @@ outputs:
       run:
         - python >=3.8
         - bottleneck >=1.3
+        - dask >=2022.1.0
         - geojson >=2.5.0
         - importlib_metadata >=4.0.0
         - netcdf4 >=1.5.3
         - numpy >=1.18.0
         - packaging >=21.3
         - pyshp >=2.3.0
-        - shapely >=1.8.0
+        - shapely >=2.0.0
         - xarray >=0.18.2
-        - dask >=2022.1.0
     test:
       imports:
         - emsarray
