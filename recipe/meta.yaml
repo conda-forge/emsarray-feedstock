@@ -1,5 +1,5 @@
 {% set name = "emsarray" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.1" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
-  sha256: c328195d79c82c9f70c7ce8f7329af8068365e99aa0b215ffb8011eef91f09f5
+  sha256: b48ffe8cfd7e77c9b8c8b6d5b05ed59623a7079c0c8128e4fc8b2ca346eb4624
 
 build:
   number: {{ build_num }}
@@ -28,15 +28,15 @@ outputs:
       run:
         - python >=3.8
         - bottleneck >=1.3
+        - dask >=2022.1.0
         - geojson >=2.5.0
         - importlib_metadata >=4.0.0
         - netcdf4 >=1.5.3
         - numpy >=1.18.0
         - packaging >=21.3
         - pyshp >=2.3.0
-        - shapely >=1.8.0
+        - shapely >=2.0.0
         - xarray >=0.18.2
-        - dask >=2022.1.0
     test:
       imports:
         - emsarray
@@ -67,9 +67,9 @@ outputs:
 about:
   home: https://pypi.org/project/emsarray/
   summary: Utilities for working with non-CF grid datasets
-  license: LicenseRef-CSIRO-Open-Source-Software-Licence-Agreement
+  license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENCE
+  license_file: LICENSE
   doc_url: https://emsarray.readthedocs.io/
   dev_url: https://github.com/csiro-coasts/emsarray/
 
