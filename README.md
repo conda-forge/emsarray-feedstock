@@ -1,11 +1,11 @@
-About emsarray
-==============
+About emsarray-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emsarray-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/emsarray/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emsarray-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utilities for working with non-CF grid datasets
 
