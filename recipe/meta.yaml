@@ -1,5 +1,5 @@
 {% set name = "emsarray" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
-  sha256: efa37b958f42b55722386961777c9ad4395d5456c0d9e611ea14694365673699
+  sha256: 6f97691bbbe0469e152290781d6e5036f09cfb3b20471e7dbcec7f79f2e39eb8
 
 build:
   number: {{ build_num }}
@@ -55,6 +55,7 @@ outputs:
         - {{ pin_subpackage("emsarray-core", exact=True) }}
           # plot extra
         - cartopy >=0.21.1
+        - cfunits >=3.3.5
         - matplotlib-base >=3.5.2
         - pykdtree >=1.3.5
           # tutorial extra
