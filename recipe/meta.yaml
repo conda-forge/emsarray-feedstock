@@ -1,5 +1,5 @@
 {% set name = "emsarray" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 {% set build_num = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
-  sha256: 6f97691bbbe0469e152290781d6e5036f09cfb3b20471e7dbcec7f79f2e39eb8
+  sha256: 9f85afd853240d19c5f0b01735a3280c2f81f3e845532e808aee9d7556277cf3
 
 build:
   number: {{ build_num }}
