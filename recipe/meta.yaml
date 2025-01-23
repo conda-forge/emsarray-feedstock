@@ -77,4 +77,5 @@ about:
 extra:
   recipe-maintainers:
     - mx-moth
+    - david-sh-csiro
   feedstock-name: {{ name|lower }}
