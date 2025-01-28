@@ -44,6 +44,7 @@ outputs:
         - pip check
         - emsarray --help
       requires:
+        - python 3.11
         - pip
 
   - name: emsarray
@@ -52,6 +53,7 @@ outputs:
       string: {{ build_num }}_fullpackage
     requirements:
       run:
+        - python >=3.11
         - {{ pin_subpackage("emsarray-core", exact=True) }}
           # plot extra
         - cartopy >=0.22
@@ -63,6 +65,8 @@ outputs:
     test:
       imports:
         - emsarray
+      requires:
+        - python 3.11
 
 
 about:
