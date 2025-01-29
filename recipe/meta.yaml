@@ -45,6 +45,7 @@ outputs:
         - pip check
         - emsarray --help
       requires:
+        - python {{ python_min }}
         - pip
 
   - name: emsarray
@@ -64,6 +65,8 @@ outputs:
     test:
       imports:
         - emsarray
+      requires:
+        - python {{ python_min }}
 
 
 about:
