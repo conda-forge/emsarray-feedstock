@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "emsarray" %}
 {% set version = "0.8.0" %}
 {% set build_num = 0 %}
@@ -7,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
   sha256: 84c7d1281312d5df8aec3c66213500d493da702e18d300e706c7a650c89726eb
 
 build:
@@ -23,11 +24,11 @@ outputs:
 
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
         - pip
         - setuptools
       run:
-        - python >=3.10
+        - python >={{ python_min }}
         - bottleneck >=1.3
         - dask >=2023.07.0
         - geojson >=3.0
@@ -44,6 +45,7 @@ outputs:
         - pip check
         - emsarray --help
       requires:
+        - python {{ python_min }}
         - pip
 
   - name: emsarray
@@ -63,6 +65,8 @@ outputs:
     test:
       imports:
         - emsarray
+      requires:
+        - python {{ python_min }}
 
 
 about:
