@@ -148,5 +148,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@david-sh-csiro](https://github.com/david-sh-csiro/)
 * [@mx-moth](https://github.com/mx-moth/)
 
