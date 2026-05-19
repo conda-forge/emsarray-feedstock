@@ -1,6 +1,6 @@
-{% set python_min = '3.11' %}
+{% set python_min = '3.12' %}
 {% set name = "emsarray" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0" %}
 {% set build_num = 0 %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emsarray-{{ version }}.tar.gz
-  sha256: c1f6e2fb498f6b293a17ea483f2fe6df4614fed1b9fe6c26ad3edc46feac61ee
+  sha256: accb96a6f27128d8a61f66ca92938cdc1c0d9109548860ccefeaf338e07a7c43
 
 build:
   number: {{ build_num }}
@@ -26,7 +26,7 @@ outputs:
       host:
         - python {{ python_min }}
         - pip
-        - setuptools
+        - poetry
       run:
         - python >={{ python_min }}
         - bottleneck >=1.3
